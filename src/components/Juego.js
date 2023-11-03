@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import dataAnimal from '../data/dataAnimal.json';
 
 function Juego({ nombreJugador, puntaje, setPuntaje, alTerminar, rondaActual,setRondaActual }) {
     const [animalObjetivo, setAnimalObjetivo] = useState('');
@@ -6,13 +7,13 @@ function Juego({ nombreJugador, puntaje, setPuntaje, alTerminar, rondaActual,set
     const [esCorrecto, setEsCorrecto] = useState(null);
     const [rondasTotales, setRondasTotales] = useState(Math.floor(Math.random() * 6) + 5);
     const [puedeHacerClic, setPuedeHacerClic] = useState(true);
-
-   
+  
 
     const obtenerAnimalAleatorio = () => {
-        const animales = ['gato', 'perro', 'vaca', 'leon', 'jirafa', 'cebra'];
-        const indiceAleatorio = Math.floor(Math.random() * animales.length);
-        return animales[indiceAleatorio];
+        const indiceAleatorio = Math.floor(Math.random() * dataAnimal.length);
+
+        const arrayNombres = dataAnimal.map(objeto => objeto.nombre);
+        return arrayNombres[indiceAleatorio];
     };
 
     const obtenerOpcionesAleatorias = () => {
@@ -40,6 +41,7 @@ function Juego({ nombreJugador, puntaje, setPuntaje, alTerminar, rondaActual,set
             setEsCorrecto(false);
         }
         setPuedeHacerClic(false);
+    
     };
 
     const siguienteRonda = () => {

@@ -1,0 +1,32 @@
+[
+    {
+        "img":"../img/cebra.png",
+        "nombre":"Cebra",
+        "indiceAleatorio":""
+    },
+    {
+        "img":"../img/Gato.png",
+        "nombre":"Gato",
+        "indiceAleatorio":""
+    },
+    {
+        "img":"../img/Jirafa.png",
+        "nombre":"Jirafa",
+        "indiceAleatorio":""
+    },
+    {
+        "img":"../img/Leon.png",
+        "nombre":"Leon",
+        "indiceAleatorio":""
+    },
+    {
+        "img":"../img/Perro.png",
+        "nombre":"Perro",
+        "indiceAleatorio":""
+    },
+    {
+        "img":"../img/Vaca.png",
+        "nombre":"Vaca",
+        "indiceAleatorio":""
+    }
+]

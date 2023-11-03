@@ -1,5 +1,6 @@
-
+import dataAnimal from './data/dataAnimal.json';
 import Inicio from "./components/Inicio";
+
 function App() {
     return (           
             <Inicio/> 
