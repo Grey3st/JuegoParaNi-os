@@ -1,32 +1,26 @@
 [
     {
         "img":"../img/zebra.png",
-        "nombre":"Zebra",
-        "indiceAleatorio":""
+        "nombre":"Zebra"
     },
     {
         "img":"../img/cat.png",
-        "nombre":"Cat",
-        "indiceAleatorio":""
+        "nombre":"Cat"
     },
     {
         "img":"../img/giraffe.png",
-        "nombre":"Giraffe",
-        "indiceAleatorio":""
+        "nombre":"Giraffe"
     },
     {
         "img":"../img/Leon.png",
-        "nombre":"Leon",
-        "indiceAleatorio":""
+        "nombre":"Leon"
     },
     {
         "img":"../img/dog.png",
-        "nombre":"Dog",
-        "indiceAleatorio":""
+        "nombre":"Dog"
     },
     {
         "img":"../img/cow.png",
-        "nombre":"Cow",
-        "indiceAleatorio":""
+        "nombre":"Cow"
     }
 ]
