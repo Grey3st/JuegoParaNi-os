@@ -1,10 +1,11 @@
 import React from 'react';
+import styles from "./inicio.module.css"
 
 function Felicitaciones({ nombreJugador, puntaje }) {
     return (
-        <div>
-            <h1>¡Felicitaciones, {nombreJugador}!</h1>
-            <p>Tu puntaje total es: {puntaje}</p>
+        <div className= {styles.btn}>
+            <h1>¡Congratulations {nombreJugador}!</h1>
+            <p>Your score is: {puntaje}</p>
         </div>
     );
 }

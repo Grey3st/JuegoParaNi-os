@@ -1,0 +1,49 @@
+.btn {
+    background: url(/public/img/inicio1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+button {
+    font-family: 'Grandstander', cursive;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px;
+   
+}
+
+h1 {
+    font-family: 'Grandstander', cursive;
+    font-size: 35px;
+    
+}
+p{
+    font-family: 'Grandstander', cursive;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.game{
+    font-family: 'Grandstander', cursive;
+    font-weight: bold;
+    color: blue;
+    font-size: 30px;
+}
+.true{
+    font-family: 'Grandstander', cursive;
+    font-weight: bold;
+    font-size: 35px;
+    color: blue;
+}
+.false{
+    font-family: 'Grandstander', cursive;
+    font-weight: bold;
+    font-size: 35px;
+    color: red;
+}

@@ -3,6 +3,7 @@ import Juego from './Juego';
 import Felicitaciones from './Felicitaciones';
 import Juego2 from './Juego2';
 import Felicitaciones2 from './Felicitaciones2';
+import styles from "./inicio.module.css";
 function Inicio() {
     const [nombreJugador, setNombreJugador] = useState('');
     const [mostrarJuego, setMostrarJuego] = useState(false);
@@ -44,14 +45,14 @@ function Inicio() {
 
     if (!mostrarJuego && !mostrarFelicitaciones) {
         return (
-            <div>
-                <h1>Ingresa tu nombre</h1>
+            <div className={styles.btn}>
+                <h1>Write your name player 1</h1>
                 <input
                     type="text"
-                    placeholder="Nombre del niño"
+                    placeholder="Kid's name"
                     onChange={(e) => setNombreJugador(e.target.value)}
                 />
-                <button onClick={() => manejarClickJugar(nombreJugador)}>Jugar</button>
+                <button onClick={() => manejarClickJugar(nombreJugador)}>Play</button>
             </div>
         );
     } else if (mostrarJuego) {
@@ -73,14 +74,14 @@ function Inicio() {
 
     if (mostrarFelicitaciones===true && !mostrarJuego2 && !mostrarFelicitaciones2) {
         return (
-            <div>
-                <h1>Ingresa tu nombre2</h1>
+            <div className= {styles.btn}> 
+                <h1>Write your name player 2</h1>
                 <input
                     type="text"
-                    placeholder="Nombre del niño2"
+                    placeholder="kid's name 2"
                     onChange={(e) => setNombreJugador2(e.target.value)}
                 />
-                <button onClick={() => manejarClickJugar2(nombreJugador2)}>Jugar2</button>
+                <button onClick={() => manejarClickJugar2(nombreJugador2)}>Play 2</button>
             </div>
         );
     } else if (mostrarJuego2) {

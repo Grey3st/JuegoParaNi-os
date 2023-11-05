@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import dataAnimal from '../data/dataAnimal.json';
+import styles from "./inicio.module.css"
 
 function Juego({ nombreJugador, puntaje, setPuntaje, alTerminar, rondaActual,setRondaActual }) {
     const [animalObjetivo, setAnimalObjetivo] = useState('');
@@ -62,9 +63,9 @@ function Juego({ nombreJugador, puntaje, setPuntaje, alTerminar, rondaActual,set
     }, []);
 
     return (
-        <div>
-            <h1>{nombreJugador}, ¿Cuál es este animal?</h1>
-            <p>Ronda actual: {rondaActual}</p>
+        <div className= {styles.btn}>
+            <h1>{nombreJugador} What is this animal?</h1>
+            <p className= {styles.game}>Game round: {rondaActual}</p>
             <img src={`img/${animalObjetivo}.png`} alt={animalObjetivo} />
             <div>
                 {opciones.map((animal) => (
@@ -77,9 +78,9 @@ function Juego({ nombreJugador, puntaje, setPuntaje, alTerminar, rondaActual,set
                     </button>
                 ))}
             </div>
-            {esCorrecto === true && <p>¡Correcto!</p>}
-            {esCorrecto === false && <p>¡Incorrecto!</p>}
-            <button onClick={siguienteRonda}>Siguiente</button>
+            {esCorrecto === true && <p className={styles.true}>¡Correct!</p>}
+            {esCorrecto === false && <p className= {styles.false}>¡Incorrect!</p>}
+            <button onClick={siguienteRonda}>Next</button>
         </div>
     );
 }
