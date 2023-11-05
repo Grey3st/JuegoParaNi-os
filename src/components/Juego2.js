@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import dataAnimal from '../data/dataAnimal.json';
+import styles from "./inicio.module.css";
 
 function Juego2({ nombreJugador2, puntaje2, setPuntaje2, alTerminar2, rondaActual2,setRondaActual2 }) {
     const [animalObjetivo2, setAnimalObjetivo2] = useState('');
@@ -62,9 +63,9 @@ function Juego2({ nombreJugador2, puntaje2, setPuntaje2, alTerminar2, rondaActua
     }, []);
 
     return (
-        <div>
-            <h1>{nombreJugador2}, ¿Cuál es este animal2?</h1>
-            <p>Ronda actual: {rondaActual2}</p>
+        <div className= {styles.btn}>
+            <h1>{nombreJugador2} What is this animal?</h1>
+            <p className={styles.game}>Game round: {rondaActual2}</p>
             <img src={`img/${animalObjetivo2}.png`} alt={animalObjetivo2} />
             <div>
                 {opciones2.map((animal2) => (
@@ -77,9 +78,9 @@ function Juego2({ nombreJugador2, puntaje2, setPuntaje2, alTerminar2, rondaActua
                     </button>
                 ))}
             </div>
-            {esCorrecto2 === true && <p>¡Correcto!</p>}
-            {esCorrecto2 === false && <p>¡Incorrecto!</p>}
-            <button onClick={siguienteRonda2}>Siguiente</button>
+            {esCorrecto2 === true && <p className= {styles.true}>¡Correct!</p>}
+            {esCorrecto2 === false && <p className= {styles.false}>¡Incorrect!</p>}
+            <button onClick={siguienteRonda2}>Next</button>
         </div>
     );
 }
