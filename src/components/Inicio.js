@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Juego from './Juego';
 import Felicitaciones from './Felicitaciones';
 import Juego2 from './Juego2';
-import Felicitaciones2 from './Felicitaciones2';
+import Felicitaciones2 from './Felicitaciones';
 import styles from "./inicio.module.css";
 function Inicio() {
     const [nombreJugador, setNombreJugador] = useState('');
@@ -46,7 +46,7 @@ function Inicio() {
     if (!mostrarJuego && !mostrarFelicitaciones) {
         return (
             <div className={styles.btn}>
-                <h1>Write your name player 1</h1>
+                <h1>Write your name, player 1</h1>
                 <input
                     type="text"
                     placeholder="Kid's name"
@@ -75,7 +75,7 @@ function Inicio() {
     if (mostrarFelicitaciones===true && !mostrarJuego2 && !mostrarFelicitaciones2) {
         return (
             <div className= {styles.btn}> 
-                <h1>Write your name player 2</h1>
+                <h1>Write your name, player 2</h1>
                 <input
                     type="text"
                     placeholder="kid's name 2"
@@ -103,8 +103,8 @@ function Inicio() {
     else if (mostrarFelicitaciones===true && mostrarFelicitaciones2===true) {
         return (
             <div>
-                <Felicitaciones nombreJugador={nombreJugador} puntaje={puntaje} />
-                <Felicitaciones2 nombreJugador2={nombreJugador2} puntaje2={puntaje2} />
+                <Felicitaciones nombreJugador={nombreJugador} puntaje={puntaje} nombreJugador2={nombreJugador2} puntaje2={puntaje2} />
+                
             </div>
         );
     }
