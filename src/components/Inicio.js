@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Juego from './Juego';
 import Felicitaciones from './Felicitaciones';
 import Juego2 from './Juego2';
-import Felicitaciones2 from './Felicitaciones';
 import styles from "./inicio.module.css";
 function Inicio() {
     const [nombreJugador, setNombreJugador] = useState('');
@@ -104,7 +103,6 @@ function Inicio() {
         return (
             <div>
                 <Felicitaciones nombreJugador={nombreJugador} puntaje={puntaje} nombreJugador2={nombreJugador2} puntaje2={puntaje2} />
-                
             </div>
         );
     }
