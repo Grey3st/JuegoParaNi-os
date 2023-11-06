@@ -64,7 +64,7 @@ function Juego2({ nombreJugador2, puntaje2, setPuntaje2, alTerminar2, rondaActua
 
     return (
         <div className= {styles.btn}>
-            <h1>{nombreJugador2} What is this animal?</h1>
+            <h1>{nombreJugador2}, what is this animal?</h1>
             <p className={styles.game}>Game round: {rondaActual2}</p>
             <img src={`img/${animalObjetivo2}.png`} alt={animalObjetivo2} />
             <div>

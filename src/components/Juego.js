@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import dataAnimal from '../data/dataAnimal.json';
-import styles from "./inicio.module.css"
+import styles from "./inicio.module.css";
 
 function Juego({ nombreJugador, puntaje, setPuntaje, alTerminar, rondaActual,setRondaActual }) {
     const [animalObjetivo, setAnimalObjetivo] = useState('');
@@ -64,7 +64,7 @@ function Juego({ nombreJugador, puntaje, setPuntaje, alTerminar, rondaActual,set
 
     return (
         <div className= {styles.btn}>
-            <h1>{nombreJugador} What is this animal?</h1>
+            <h1>{nombreJugador}, what is this animal?</h1>
             <p className= {styles.game}>Game round: {rondaActual}</p>
             <img src={`img/${animalObjetivo}.png`} alt={animalObjetivo} />
             <div>
