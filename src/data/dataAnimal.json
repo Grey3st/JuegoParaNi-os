@@ -1,26 +1,32 @@
 [
     {
-        "img":"../img/zebra.png",
-        "nombre":"Zebra"
+        "imagen":"../img/zebra.png",
+        "nombre":"Zebra",
+        "sonido":"../sounds/zebra.wav"
     },
     {
-        "img":"../img/cat.png",
-        "nombre":"Cat"
+        "imagen":"../img/cat.png",
+        "nombre":"Cat",
+        "sonido":"../sounds/cat.wav"
     },
     {
-        "img":"../img/giraffe.png",
-        "nombre":"Giraffe"
+        "imagen":"../img/giraffe.png",
+        "nombre":"Giraffe",
+        "sonido":"../sounds/giraffe.wav"
     },
     {
-        "img":"../img/Leon.png",
-        "nombre":"Leon"
+        "imagen":"../img/Leon.png",
+        "nombre":"Leon",
+        "sonido":"../sounds/lion.wav"
     },
     {
-        "img":"../img/dog.png",
-        "nombre":"Dog"
+        "imagen":"../img/dog.png",
+        "nombre":"Dog",
+        "sonido":"../sounds/dog.wav"
     },
     {
-        "img":"../img/cow.png",
-        "nombre":"Cow"
+        "imagen":"../img/cow.png",
+        "nombre":"Cow",
+        "sonido":"../sounds/cow.wav"
     }
 ]
